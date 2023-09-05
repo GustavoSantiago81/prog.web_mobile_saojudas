@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> titulo </title>
+		<link href="./cssExemplo.css" rel="stylesheet" type="text/css"
+	</head>
+
+	<body>
+
+		<table border="i">
+			<tr>
+				<td>Nome</td>
+				<td>idade</td>
+				<td>Profissão</td>
+			
+			</tr>
+
+			<tr>
+				<td>Nome</td>
+				<td>idade</td>
+				<td>Profissão</td>
+			
+			</tr>
+
+			<tr>
+				<td>Ralf</td>
+				<td>26</td>
+				<td>Designer</td>
+			
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title> titulo </title>
+		<link href="./cssExemplo.css" rel="stylesheet" type="text/css"
+	</head>
+
+	<body>
+
+		<ol type="i">
+			<li>Cores:
+				<ul type="square">
+					<li>Vermelho</li>
+					<li>Verde</li>
+					<li>Azul</li>
+				</ul>
+			</li>
+
+			<li>Simbolos:
+				<ul>
+					<li>Quadrado</li>
+					<li type="disc">Triângulo</li>
+					<li>Ponto</li>
+				</ul>
+			</li>
+		</ol>
+	</body>
+</html>
