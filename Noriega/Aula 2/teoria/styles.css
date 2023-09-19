@@ -5,3 +5,24 @@ body {
 p {
     color: green;
 }
+
+/* Classe e id */
+.meu-paragrafo {
+    background-color: black;
+}
+
+#titulo-principal {
+    background-color: rgb(49, 146, 10);
+    color: black;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+/* todos os Elementos da Página e listas */
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p, h1 {
+    border-bottom: 1px solid red;
+}
