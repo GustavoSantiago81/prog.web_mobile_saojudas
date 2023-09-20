@@ -19,16 +19,16 @@ p {
 }
 
 /* todos os Elementos da Página e listas */
-*{
+/* *{
     font-family: 'Courier New', Courier, monospace;
 }
 
 p, h1 {
     border-bottom: 1px solid red;
-}
+} */
 
 /* Cores */
-.nome-da-cor{
+/* .nome-da-cor{
     color: pink;
 }
 
@@ -39,5 +39,13 @@ p, h1 {
 
 .rgb {
     color: rgb(54, 92, 90);
+} */
+
+.borda {
+    border-style: ridge;
+    border-color: brown;
 }
 
+.alinhar-texto {
+    text-align: center;
+}
