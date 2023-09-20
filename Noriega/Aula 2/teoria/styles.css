@@ -26,3 +26,18 @@ p {
 p, h1 {
     border-bottom: 1px solid red;
 }
+
+/* Cores */
+.nome-da-cor{
+    color: pink;
+}
+
+.hexa {
+    color: #3f3f3f;
+    background-color: #20c050;
+}
+
+.rgb {
+    color: rgb(54, 92, 90);
+}
+
