@@ -65,3 +65,20 @@ p, h1 {
 .mono-espacada {
     font-family: 'Courier New', Courier, monospace;
 }
+
+/* size & weight */
+.tamanho-fonte-grande {
+    font-size: 64px;
+}
+
+.tamanho-fonte-pequena {
+    font-size: 12px;
+}
+
+.peso-fonte {
+    font-weight: 700;
+}
+
+.texto-italico {
+    font-style: italic;
+}
