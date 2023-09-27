@@ -109,4 +109,10 @@ p, h1 {
     width: 120px;
     text-align: center;
     margin: auto;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: rgb(6, 7, 12);
+    transform: scale(3);
 }
