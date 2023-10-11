@@ -1,4 +1,4 @@
-var nome ="Minha Calculadora"
+var nome ="Minha Calcu";
 
 function soma(a, b){
     return a +b;
@@ -16,4 +16,10 @@ function div(a, b){
     return a/b;
 }
 
-module.exports = soma;
+module.exports = {
+    soma,
+    mult,
+    sub,
+    div,
+    nome
+};
