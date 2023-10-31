@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Editar Produto</title>
+</head>
+<body>
+    <header>
+        <h1>Editar Produto</h1>
+    </header>
+    
+    <div id="conteudo">
+        <form id="formEditar">
+
+            <!-- Posso usar option, em vez de input -->
+            <label for="id">Escolha um Produto:</label>
+            <select id="produtoSelect">
+                <option value="">Selecione um produto</option>
+            </select> <br>
+            <!-- <label for="nome">ID:</label>
+            <input type="number" id="id" required placeholder="Digite o ID do produto que deseja editar"><br> -->
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required><br>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" required></textarea><br>
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" step="0.01" required><br>
+
+            <label for="quantidade">Quantidade em Estoque:</label>
+            <input type="number" id="quantidade" required><br>
+
+            <button type="submit">Editar Produto</button>
+        </form>
+    </div>
+</body>
+</html>
