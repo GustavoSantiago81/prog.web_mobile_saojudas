@@ -1,0 +1,11 @@
+{
+  "name": "api_sistema_interno",
+  "version": "1.0.0",
+  "description": "backend para projeto de sistema interno de uma empresa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Santiago",
+  "license": "ISC"
+}
