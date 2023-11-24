@@ -4,3 +4,17 @@
 https://color.adobe.com/pt/create/color-wheel
 
 https://matthewrayfield.com/
+
+
+.png
+.
+.
+.
+.jpge
+.jpg
+.bmp
+.gif
+
+## Vetorização
+Kwon - (google maps)
+Doppler 
