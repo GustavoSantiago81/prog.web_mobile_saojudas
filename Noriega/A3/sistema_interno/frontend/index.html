@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema interno</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <div class="navbar">
+        Sistema Interno
+    </div>
 
     <h1>Sistemas Eletrônicos</h1>
     <h2>Digite o código do aparelho:</h2>
@@ -34,6 +39,45 @@
         </select>
         <p id="opcaoSelecionadaPci"></p>
     </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <table id="tabelaBitrix24" class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Funcionário</th>
+                  <th>ID da Tarefa</th>
+                  <th>Tempo Decorrido</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dados serão preenchidos dinamicamente pelo JavaScript -->
+              </tbody>
+            </table>
+          </div>
+          <div class="col">
+            <table id="outraTabela" class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Funcionário</th>
+                  <th>Total de Horas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dados serão preenchidos dinamicamente pelo JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+
+
+
 
     <script>
         function pesquisar() {
