@@ -1,15 +1,13 @@
-// Cria um array com os dados da tabela
-var tableData = [
-    { numero: 1, dataAbertura: "01/01/2022", naoConformidade: "Produto fora da especificação", autor: "Isaque" },
-    { numero: 2, dataAbertura: "02/01/2022", naoConformidade: "Entrega atrasada", autor: "Samuel"  },
-    { numero: 3, dataAbertura: "03/01/2022", naoConformidade: "Produto danificado", autor: "Paulo"  },
-    { numero: 4, dataAbertura: "04/01/2022", naoConformidade: "Produto não conforme", autor: "Ailton"  },{ numero: 1, dataAbertura: "01/01/2022", naoConformidade: "Produto fora da especificação", autor: "Isaque" },
-    { numero: 5, dataAbertura: "05/01/2022", naoConformidade: "Produto fora da especificação", autor: "José"  }
-  ];
+// ARQUIVO DE PREPARAÇÃO DE TABELA DINÂMICA
 
-function inicializar(){
-  tableData
-}
+// Array com os dados iniciais da tabela
+var tableData = [
+    { numero: 1, dataAbertura: "01/01/2022", codigo: "00000001", naoConformidade: "Produto fora da especificação", autor: "Isaque" },
+    { numero: 2, dataAbertura: "02/01/2022", codigo: "00000002", naoConformidade: "Entrega atrasada", autor: "Samuel"  },
+    { numero: 3, dataAbertura: "03/01/2022", codigo: "00000003", naoConformidade: "Produto danificado", autor: "Paulo"  },
+    { numero: 4, dataAbertura: "04/01/2022", codigo: "00000004", naoConformidade: "Produto não conforme", autor: "Ailton"  },
+    { numero: 5, dataAbertura: "05/01/2022", codigo: "00000005", naoConformidade: "Produto fora da especificação", autor: "José"  }
+  ];
 
 function listaTabela(){
 
@@ -39,6 +37,9 @@ for (var i = 0; i < tableData.length; i++) {
 
   var tdDataAbertura = tr.insertCell();
   tdDataAbertura.textContent = tableData[i].dataAbertura;
+
+  var tdCodigo = tr.insertCell();
+  tdCodigo.textContent = tableData[i].codigo;
   
   var tdNaoConformidade = tr.insertCell();
   tdNaoConformidade.textContent = tableData[i].naoConformidade;

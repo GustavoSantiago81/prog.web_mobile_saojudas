@@ -17,7 +17,7 @@
 
     <main>
         <div class="container">
-            <img src="./assets/ERP.jpg" alt="ERP">
+            <img src="./assets/sistema de gestao imagem - Pesquisar_files/Beneficios-da-Gestao-Integrada-1.png" alt="ERP">
         </div>
 <div style="display: none;">
 
@@ -53,6 +53,17 @@
     <button onclick="listaTabela()">teste</button>
 </div>
 
+<!-- FIM DA SESSÃO DE OPÇÕES CORRETIVAS -->
+
+<div class="pesquisa">
+    <h2>Digite o código do aparelho:</h2>
+    <input type="text" id="codigoAparelho" placeholder="Digite o código do aparelho">
+    <button onclick="pesquisar()">Pesquisar</button>
+</div>
+
+<!-- <h2>Resultado da Pesquisa:</h2>
+<p id="resultado"></p> -->
+
     <!-- TABELA NÃO CONFORME -->
     <div class="content"  style="height: 200px; overflow-y: scroll;">
         <table id="table" border="1">
@@ -60,23 +71,12 @@
                 <tr>
                     <th>Nº</th>
                     <th>Data de Abertura</th>
+                    <th>Código</th>
                     <th>Não Conformidade</th>
                     <th>Funcionario</th>
                 </tr>
                 <tbody id="tbody" style="overflow-y: scroll;">
                     <!-- Os dados serão preenchidos dinamicamente -->
-                    <tr>
-                        <td>1</td>
-                        <td>13/12/2023</td>
-                        <td>23112701</td>
-                        <td>Gustavo</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>27/11/2023</td>
-                        <td>23112701</td>
-                        <td>Oswald</td>
-                    </tr>
                 </tbody>
             </thead>
         </table>
@@ -92,7 +92,7 @@
         function pesquisar() {
             var codigoAparelho = document.getElementById("codigoAparelho").value;
             var resultado = document.getElementById("resultado");
-
+            alert("foi");
             if (codigoAparelho === "001") {
                 resultado.innerHTML = "Amplificador dualzone";
             } else {
