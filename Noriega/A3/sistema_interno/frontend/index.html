@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema interno</title>
+    <title>Sistema Interno</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <script src=""></script>
+    <script src="./js/tabela.js"></script>
 </head>
-<body>
+<body onload="listaTabela()">
+    
+    <header>
+        <h1>Sistema Interno</h1>
+    </header>
 
-    <div class="navbar">
-        Sistema Interno
-    </div>
+    <main>
+        <div class="container">
+            <img src="./assets/ERP.jpg" alt="ERP">
+        </div>
+<div style="display: none;">
 
-    <h1>Sistemas Eletrônicos</h1>
-    <h2>Digite o código do aparelho:</h2>
-    <input type="text" id="codigoAparelho" placeholder="Digite o código do aparelho">
-    <button onclick="pesquisar()">Pesquisar</button>
 
-    <h2>Resultado da Pesquisa:</h2>
+        <!-- AÇÕES CORRETIVAS -->
+        <h1>Sistemas Eletrônicos</h1>
+        <h2>Digite o código do aparelho:</h2>
+        <input type="text" id="codigoAparelho" placeholder="Digite o código do aparelho">
+        <button onclick="pesquisar()">Pesquisar</button>
+        
+        <h2>Resultado da Pesquisa:</h2>
     <p id="resultado"></p>
 
     <h2>Selecione a opção desejada:</h2>
@@ -39,47 +50,45 @@
         </select>
         <p id="opcaoSelecionadaPci"></p>
     </div>
+    <button onclick="listaTabela()">teste</button>
+</div>
 
-
-
-
-
-    <div class="container">
-        <div class="row">
-          <div class="col">
-            <table id="tabelaBitrix24" class="table table-striped">
-              <thead>
+    <!-- TABELA NÃO CONFORME -->
+    <div class="content"  style="height: 200px; overflow-y: scroll;">
+        <table id="table" border="1">
+            <thead style="position: sticky; top: 0;">
                 <tr>
-                  <th>Funcionário</th>
-                  <th>ID da Tarefa</th>
-                  <th>Tempo Decorrido</th>
+                    <th>Nº</th>
+                    <th>Data de Abertura</th>
+                    <th>Não Conformidade</th>
+                    <th>Funcionario</th>
                 </tr>
-              </thead>
-              <tbody>
-                <!-- Dados serão preenchidos dinamicamente pelo JavaScript -->
-              </tbody>
-            </table>
-          </div>
-          <div class="col">
-            <table id="outraTabela" class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Funcionário</th>
-                  <th>Total de Horas</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- Dados serão preenchidos dinamicamente pelo JavaScript -->
-              </tbody>
-            </table>
-          </div>
-        </div>
+                <tbody id="tbody" style="overflow-y: scroll;">
+                    <!-- Os dados serão preenchidos dinamicamente -->
+                    <tr>
+                        <td>1</td>
+                        <td>13/12/2023</td>
+                        <td>23112701</td>
+                        <td>Gustavo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>27/11/2023</td>
+                        <td>23112701</td>
+                        <td>Oswald</td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
     </div>
+    
+    </main>
 
 
+    <footer>Teste</footer>
 
 
-    <script>
+<script>
         function pesquisar() {
             var codigoAparelho = document.getElementById("codigoAparelho").value;
             var resultado = document.getElementById("resultado");

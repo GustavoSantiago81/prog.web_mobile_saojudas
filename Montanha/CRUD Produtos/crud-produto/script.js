@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       quantidade: 75,
     },
   ];
+  
   function carregarPagina(pagina) {
     fetch(pagina)
       .then((response) => response.text())
